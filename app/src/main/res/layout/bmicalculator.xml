@@ -11,68 +11,67 @@
         android:textColor="@color/black"
         android:textSize="25dp"
         android:layout_centerHorizontal="true"/>
-
     <LinearLayout
         android:id="@+id/form"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:orientation="vertical">
-
+        android:orientation="horizontal">
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="umur \t\t\t\t\t\t\t :  "
-                android:textColor="@color/black" />
-
+                android:text="umur "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinggi badan"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berat Badan "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp">
             <EditText
                 android:id="@+id/umur"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="masukkan umur"
-                android:textSize="10dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tinggi badan  :  "
-                android:textColor="@color/black" />
-
+                android:hint=": masukkan umur"
+                android:textSize="15dp"
+                />
             <EditText
                 android:id="@+id/tinggibadan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="masukkan tinggi badan"
-                android:textSize="10dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Berat Badan \t :  "
-                android:textColor="@color/black" />
-
+                android:hint=": masukkan tinggi badan"
+                android:textSize="15dp"/>
             <EditText
                 android:id="@+id/beratbadan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="masukkan berat badan"
-                android:textSize="10dp" />
+                android:hint=": masukkan berat badan"
+                android:textSize="15dp" />
+
         </LinearLayout>
     </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,116 +83,115 @@
             android:layout_width="wrap_content"
             android:layout_height="37dp"
             android:text="Calculate"
-            android:textSize="10dp"
             android:id="@+id/btncalculate"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="37dp"
             android:text="reset"
-            android:textSize="10dp"
             android:layout_marginLeft="20dp"
             android:id="@+id/btnreset"/>
     </LinearLayout>
-    <LinearLayout
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Hasilnya"
         android:layout_below="@id/btn"
+        android:id="@+id/hasil"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
         android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hasil"
         android:layout_marginTop="20dp"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="hasilnya"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+        android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="umur \t\t\t\t\t\t\t :  "
-                    android:textColor="@color/black" />
-
-                <TextView
-                    android:id="@+id/hasilumur"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="masukkan umur"
-                    android:textSize="10dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tinggi badan  :  "
-                    android:textColor="@color/black" />
-
-                <TextView
-                    android:id="@+id/hasiltinggibadan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="masukkan tinggi badan"
-                    android:textSize="10dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Berat Badan \t :  "
-                    android:textColor="@color/black" />
-
-                <TextView
-                    android:id="@+id/hasilberatbadan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="masukkan berat badan"
-                    android:textSize="10dp" />
-            </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="BMI Anda  \t\t\t :  "
-                android:textColor="@color/black" />
+                android:text="umur"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinggi badan"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berat Badan"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI Anda"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/hasilumur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="masukkan umur"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/hasiltinggibadan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="masukkan tinggi badan"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/hasilberatbadan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="masukkan berat badan"
+                android:textSize="20dp"/>
 
             <TextView
                 android:id="@+id/hasilbmi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="belum di isi"
-                android:textSize="10dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Kategori \t\t\t\t :  "
-                android:textColor="@color/black" />
+                android:text="belum di isi"
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/hasilkategori"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="belum di isi"
-                android:textSize="10dp" />
+                android:text="belum di isi"
+                android:textSize="20dp"/>
+
         </LinearLayout>
     </LinearLayout>
     <Button

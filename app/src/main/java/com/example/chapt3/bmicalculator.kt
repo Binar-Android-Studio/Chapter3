@@ -13,6 +13,7 @@ class bmicalculator : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.bmicalculator)
         bmicalculate()
+        reset()
 
         var nextpage = findViewById(R.id.studenttriger) as Button
         nextpage.setOnClickListener {
@@ -21,7 +22,29 @@ class bmicalculator : AppCompatActivity() {
         }
     }
 
+    fun reset(){
+        var reset =  findViewById(R.id.btnreset) as Button
+        var umur = findViewById(R.id.umur) as EditText
+        var tinggi = findViewById(R.id.tinggibadan) as EditText
+        var beratbadan = findViewById(R.id.beratbadan) as EditText
+        var hasilumur = findViewById(R.id.hasilumur) as TextView
+        var hasiltb = findViewById(R.id.hasiltinggibadan) as TextView
+        var hasilbb = findViewById(R.id.hasilberatbadan) as TextView
+        var hasilbmi = findViewById(R.id.hasilbmi) as TextView
+        var kategotri = findViewById(R.id.hasilkategori) as TextView
 
+        reset.setOnClickListener {
+            umur.setText("")
+            tinggi.setText("")
+            beratbadan.setText("")
+            hasilumur.setText("")
+            hasiltb.setText("")
+            hasilbb.setText("")
+            hasilbmi.setText("")
+            kategotri.setText("")
+        }
+
+    }
     fun bmicalculate(){
         var umur = findViewById(R.id.umur) as EditText
         var tinggi = findViewById(R.id.tinggibadan) as EditText
@@ -32,7 +55,7 @@ class bmicalculator : AppCompatActivity() {
         var hasilbmi = findViewById(R.id.hasilbmi) as TextView
         var kategotri = findViewById(R.id.hasilkategori) as TextView
         var calculate = findViewById(R.id.btncalculate) as Button
-        var reset =  findViewById(R.id.btnreset) as Button
+
 
         calculate.setOnClickListener {
             hasilumur.text = umur.text.toString()

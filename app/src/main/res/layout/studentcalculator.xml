@@ -1,14 +1,288 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="20dp">
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Student Calculator"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="99dp" />
-</LinearLayout>
+        android:layout_centerHorizontal="true"
+        android:text="Menghitung Nilai Akhir\nMahasiswa"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.5dp"
+                android:text="NIM"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai UAS"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="12.5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai UTS"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="12.5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai Tugas"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="12.5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp">
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=": masukkan nama"
+                android:textSize="15dp"
+                />
+            <EditText
+                android:id="@+id/nim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=": masukkan NIM"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/nuas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=": masukkan Nilai UAS"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/nuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=": masukkan Nilai UTS"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/ntugas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=": masukkan Nilai TUGAS"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="Calculate"
+            android:id="@+id/btncalculate"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="reset"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnreset"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_marginTop="10dp"
+        android:text="Hasilnya"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hasil"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Mahasiswa"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIM"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UAS"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UTS"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tugas"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rata Rata Nilai"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai Huruf"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/hasilnama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Belum diisi"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/hasilNIM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIM belum di isi"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/hasilUAS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai Belum di isi"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/hasilUTS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai Belum di isi"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/hasiltugas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai Belum di isi"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/hasiltotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai Belum di isi"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/hasilratarata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai Belum di isi"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/hasilhuruf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai Belum di isi"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/hasilstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai Belum di isi"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/studenttriger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Go to student Calculator" />
+</RelativeLayout>
