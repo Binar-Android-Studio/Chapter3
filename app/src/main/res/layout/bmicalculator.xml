@@ -91,16 +91,17 @@
             android:layout_marginLeft="20dp"
             android:id="@+id/btnreset"/>
     </LinearLayout>
+
     <TextView
+        android:id="@+id/hasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hasilnya"
         android:layout_below="@id/btn"
-        android:id="@+id/hasil"
-        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="Hasilnya"
         android:textColor="@color/black"
         android:textSize="20dp"
-        android:layout_marginTop="20dp"/>
+        android:textStyle="bold" />
 
     <LinearLayout
         android:id="@+id/result"

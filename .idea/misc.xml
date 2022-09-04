@@ -3,9 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/activity_alatihan.xml" value="0.25416666666666665" />
+        <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/activity_alatihanview.xml" value="0.25416666666666665" />
+        <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/activity_explicit.xml" value="0.264" />
         <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/activity_home.xml" value="0.358695652173913" />
+        <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/activity_intent.xml" value="0.16" />
         <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/activity_main.xml" value="4.0" />
+        <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/activity_pa_arcelable.xml" value="0.1111111111111111" />
+        <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/activity_serializable.xml" value="0.25416666666666665" />
         <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/activity_studentcalculator.xml" value="0.14356884057971014" />
+        <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/activity_web_view.xml" value="0.264" />
         <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/bmicalculator.xml" value="0.25" />
         <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/calculator.xml" value="0.26132246376811596" />
         <entry key="..\:/Program_Files/chapt3/app/src/main/res/layout/content_studentcalculator.xml" value="0.14356884057971014" />

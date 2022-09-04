@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.chapt3" >
+    package="com.example.chapt3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,17 +14,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Chapt3"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".topic2.a_latihanview"
+            android:exported="false" />
+        <!-- <activity -->
+        <!-- android:name=".topic2.a_Latihan" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".topic2.Parcelable" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".Serializable" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".topic2.WebView" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".bmicalculator"
+            android:exported="true" />
+        <activity
+            android:name=".topic2.ExplicitActivity"
+            android:exported="false" />
         <activity
             android:name=".studentcalculator"
             android:exported="false"
             android:label="@string/title_activity_studentcalculator"
             android:theme="@style/Theme.Chapt3.NoActionBar" />
         <activity
-            android:name=".bmicalculator"
+            android:name=".topic2.a_Latihan"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Chapt3.NoActionBar" >
+            android:theme="@style/Theme.Chapt3.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
